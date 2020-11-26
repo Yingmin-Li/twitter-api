@@ -1,5 +1,6 @@
 from unittest import TestCase
-from app.models import Tweet, TweetRepository  # We will code our `repo` class in `app/models.py`
+from app.models import Tweet
+from app.repositories import TweetRepository  # We will code our `repo` class in `app/models.py`
 
 class TestTweetRepository(TestCase):
 
@@ -7,7 +8,7 @@ class TestTweetRepository(TestCase):
         # Create an instance of the `repo` class with one argument
         repo = TweetRepository()
         # Check that `text` holds the content of the repo
-        self.assertEqual(repo.tweets_count(), 0)
+        self.assertEqual(repo.tweets_count(), 2)
 
     def test_new_tweet(self):
         repo = TweetRepository()
