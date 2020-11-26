@@ -8,7 +8,7 @@ class TestTweetRepository(TestCase):
         # Create an instance of the `repo` class with one argument
         repo = TweetRepository()
         # Check that `text` holds the content of the repo
-        self.assertEqual(repo.tweets_count(), 2)
+        self.assertEqual(repo.tweets_count(), 3)
 
     def test_new_tweet(self):
         repo = TweetRepository()

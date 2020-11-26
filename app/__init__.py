@@ -8,8 +8,8 @@ from flask_restx import Api # This line already exists
 
 from .db import tweet_repository
 from .models import Tweet
-tweet_repository.add(Tweet("a first tweet"))
-tweet_repository.add(Tweet("a second tweet"))
+tweet_repository.add(Tweet("First tweet"))
+tweet_repository.add(Tweet("Second tweet"))
 
 
 def create_app():
